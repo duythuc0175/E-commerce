@@ -7,7 +7,7 @@ const Banner = () => {
     "https://img1.oto.com.vn/2018/12/19/pgbOv26o/toyota-banxehoi-4-435c_wm.jpg",
     "https://canterburywreckers.co.nz/wp-content/uploads/2019/07/car-parts-and-car.jpg",
     "https://da2d2y78v2iva.cloudfront.net/168/153077402756002.png?_=1541391260",
-    "https://www.motorsheba.com/public/uploads/alaWRlSHOXNcpjS5YGpppBu5Q4mOGxfWcvzEUZ6dIy.jpg",
+    "https://www.motorsheba.com/public/uploads/all/aWRlSHOXNcpjS5YGpppBu5Q4mOGxfWcvzEUZ6dIy.jpg",
   ];
   const prevSlide = () => {
     setCurrentSlide(currentSlide === 0 ? 3 : (prev) => prev - 1);
