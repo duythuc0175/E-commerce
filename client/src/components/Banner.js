@@ -4,10 +4,10 @@ import { HiArrowRight, HiArrowLeft } from "react-icons/hi";
 const Banner = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const data = [
-    "https://images5.alphacoders.com/133/1330753.png",
-    "https://images7.alphacoders.com/133/1330312.png",
-    "https://images7.alphacoders.com/130/1306651.jpg",
-    "https://images3.alphacoders.com/129/1298382.jpg",
+    "https://amazonproone.vercel.app/static/media/img2.bc1bdb910ead16c65197.jpg",
+    "https://amazonproone.vercel.app/static/media/img5.aa945e25375bfdee385f.jpg",
+    "https://amazonproone.vercel.app/static/media/img3.c80809bb40bee5c34372.jpg",
+    "https://amazonproone.vercel.app/static/media/img1.efb3d39101f7ef77d616.jpg",
   ];
   const prevSlide = () => {
     setCurrentSlide(currentSlide === 0 ? 3 : (prev) => prev - 1);

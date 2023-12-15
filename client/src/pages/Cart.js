@@ -39,7 +39,7 @@ const Cart = () => {
     <div>
       <img
         className="w-full h-60 object-cover"
-        src="https://images.pexels.com/photos/1435752/pexels-photo-1435752.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        src="https://images.pond5.com/4k-cartoon-merry-christmas-animation-footage-143680697_prevstill.jpeg"
         alt="cartImg"
       />
       {productData.length > 0 ? (
