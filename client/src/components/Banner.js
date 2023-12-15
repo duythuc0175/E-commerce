@@ -4,10 +4,10 @@ import { HiArrowRight, HiArrowLeft } from "react-icons/hi";
 const Banner = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const data = [
-    "https://amazonproone.vercel.app/static/media/img2.bc1bdb910ead16c65197.jpg",
-    "https://amazonproone.vercel.app/static/media/img5.aa945e25375bfdee385f.jpg",
-    "https://amazonproone.vercel.app/static/media/img3.c80809bb40bee5c34372.jpg",
-    "https://amazonproone.vercel.app/static/media/img1.efb3d39101f7ef77d616.jpg",
+    "https://img1.oto.com.vn/2018/12/19/pgbOv26o/toyota-banxehoi-4-435c_wm.jpg",
+    "https://canterburywreckers.co.nz/wp-content/uploads/2019/07/car-parts-and-car.jpg",
+    "https://da2d2y78v2iva.cloudfront.net/168/153077402756002.png?_=1541391260",
+    "https://www.motorsheba.com/public/uploads/all/aWRlSHOXNcpjS5YGpppBu5Q4mOGxfWcvzEUZ6dIy.jpg",
   ];
   const prevSlide = () => {
     setCurrentSlide(currentSlide === 0 ? 3 : (prev) => prev - 1);
