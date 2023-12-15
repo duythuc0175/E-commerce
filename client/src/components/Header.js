@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { cartImg, logoLight } from "../assets/index";
+import { cartImg, logo } from "../assets/index";
 
 const Header = () => {
   const productData = useSelector((state) => state.bazar.productData);
@@ -11,7 +11,7 @@ const Header = () => {
       <div className="max-w-screen-xl h-full mx-auto flex items-center justify-between">
         <Link to="/">
           <div>
-            <img className="w-28" src={logoLight} alt="logo" />
+            <img className="w-28" src={logo} alt="logo" />
           </div>
         </Link>
         <div className="flex items-center gap-8">
