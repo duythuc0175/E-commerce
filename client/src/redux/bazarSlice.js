@@ -5,7 +5,7 @@ const initialState = {
 };
 
 export const bazarSlice = createSlice({
-  name: "bazar",
+  name: "Jauto",
   initialState,
   reducers: {
     addToCart: (state, action) => {
