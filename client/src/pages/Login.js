@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  GithubAuthProvider,
   GoogleAuthProvider,
   getAuth,
   signInWithPopup,
@@ -59,10 +60,34 @@ const Login = () => {
   // ============== Logout End here =============================
 
   // ============== Github Login Start here =====================
-  const githubLogin = (e) => {
-    e.preventDefault();
+  const provider2 = new GithubAuthProvider();
+  const githubLogin = () => {
+     signInWithPopup(
+      auth,
+      provider2.setCustomParameters({ prompt: "select_account" })
+    )
+      .then((result) => {
+        // The signed-in user info.
+        const user = result.user;
+        dispatch(
+          addUser({
+            _id: user.uid,
+            name: user.displayName,
+            github: user.github,
+            image: user.photoURL,
+          })
+        );
+        setTimeout(() => {
+          navigate("/");
+        }, 1500);
+      })
+      .catch((error) => {
+        // Handle Errors here.
+        console.log(error);
+      });
   };
   // ============== Github Login End here =======================
+  const githubSignOut= (handleSignOut) ;
   return (
     <div className="w-full flex flex-col items-center justify-center gap-10 py-20">
       <div className="w-full flex items-center justify-center gap-10">
@@ -90,11 +115,7 @@ const Login = () => {
           <img className="w-8" src={githubLogo} alt="githubLogo" />
           <span className="text-sm text-gray-900"> Sign in with Github</span>
         </div>
-        {userInfo && (
-          <button className="bg-black text-white text-base py-3 px-8 tracking-wide rounded-md hover:bg-gray-800 duration-300">
-            Sign Out
-          </button>
-        )}
+        
       </div>
       <ToastContainer
         position="top-left"
