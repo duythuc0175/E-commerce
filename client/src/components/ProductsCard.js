@@ -67,7 +67,7 @@ const ProductsCard = ({ product }) => {
           </div>
         </div>
         <div>
-          <p>{product.category}</p>
+          <p>{product.brand}</p>
         </div>
       </div>
       <div className="absolute top-4 right-0">
