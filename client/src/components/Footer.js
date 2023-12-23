@@ -11,9 +11,11 @@ import { MdLocationOn } from "react-icons/md";
 import { BsPersonFill, BsPaypal } from "react-icons/bs";
 import { logo, paymentLogo } from "../assets";
 
+
 const Footer = () => {
   return (
     <div className="bg-black text-[#949494] py-20 font-titleFont">
+     
       <div className="max-w-screen-xl mx-auto grid grid-cols-4">
         <div className="flex flex-col gap-7">
           <img className="w-32" src={logo} alt="logo" />
@@ -74,10 +76,10 @@ const Footer = () => {
           <button className="text-sm border text-white border-t-0 hover:bg-gray-900 active:bg-white active:text-black">
             Subscribe
           </button>
+        
         </div>
       </div>
     </div>
   );
 };
-
 export default Footer;
