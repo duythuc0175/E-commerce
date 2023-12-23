@@ -94,8 +94,8 @@ const Product = () => {
             </button>
           </div>
           <p className="text-base text-gray-500">
-            Category:{" "}
-            <span className="font-medium capitalize">{details.category}</span>
+            Brand:{" "}
+            <span className="font-medium capitalize">{details.brand}</span>
           </p>
         </div>
       </div>
