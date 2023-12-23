@@ -75,7 +75,7 @@ const Cart = () => {
               <div className="w-full mt-6 flex items-center justify-center">
                 <StripeCheckout
                   stripeKey="pk_test_51OIyWoERNboUuAwXP6YS7ZeWmNR2hTT2YWHpmnqaw3thOh6dY5KkGTPEPfp6c7hNw5x2GcV5SELgUON6KYIULqPu00RdLt8v0c"
-                  name="Bazar Online Shopping"
+                  name="Automotive Online App"
                   amount={totalAmt * 100}
                   label="Pay"
                   description={`Your Payment amount is $${totalAmt}`}

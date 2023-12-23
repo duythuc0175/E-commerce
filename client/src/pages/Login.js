@@ -101,6 +101,7 @@ const Login = () => {
         {userInfo && (
           <button
             onClick={handleSignOut}
+            
             className="bg-black text-white text-base py-3 px-8 tracking-wide rounded-md hover:bg-gray-800 duration-300"
           >
             Sign Out
@@ -115,7 +116,15 @@ const Login = () => {
           <img className="w-8" src={githubLogo} alt="githubLogo" />
           <span className="text-sm text-gray-900"> Sign in with Github</span>
         </div>
-        
+        {userInfo && (
+          <button
+            onClick={githubSignOut}
+            
+            className="bg-black text-white text-base py-3 px-8 tracking-wide rounded-md hover:bg-gray-800 duration-300"
+          >
+            Sign Out
+          </button>
+        )}
       </div>
       <ToastContainer
         position="top-left"

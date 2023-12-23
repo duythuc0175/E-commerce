@@ -12,10 +12,9 @@ import { BsPersonFill, BsPaypal } from "react-icons/bs";
 import { logo, paymentLogo } from "../assets";
 
 
-const Footer = () => {
+  const Footer = () => {
   return (
     <div className="bg-black text-[#949494] py-20 font-titleFont">
-     
       <div className="max-w-screen-xl mx-auto grid grid-cols-4">
         <div className="flex flex-col gap-7">
           <img className="w-32" src={logo} alt="logo" />
@@ -80,6 +79,7 @@ const Footer = () => {
         </div>
       </div>
     </div>
+  
   );
 };
 export default Footer;
